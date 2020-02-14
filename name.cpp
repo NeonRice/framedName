@@ -16,7 +16,7 @@ std::string getEmpty(const int len)
 
 inline std::string getHello(const std::string name)
 {
-    return "* Sveikas, " + name + "! *";
+    return name.back() == 's' ? "* Sveikas, " + name + "! *" : "* Sveika, " + name + "! *";
 }
 
 std::string getTabbed(int len)
